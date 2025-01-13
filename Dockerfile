@@ -12,7 +12,7 @@ RUN sudo apt install -y zip unzip
 RUN curl -s "https://get.sdkman.io?rcupdate=true" | bash
 
 # Install Java 22
-RUN bash -c "source /root/.sdkman/bin/sdkman-init.sh && sdk install java 22"
+RUN bash -c "source /root/.sdkman/bin/sdkman-init.sh && sdk install java 22-open"
 
 # Install gradle
 RUN bash -c "source /root/.sdkman/bin/sdkman-init.sh && sdk install gradle"
